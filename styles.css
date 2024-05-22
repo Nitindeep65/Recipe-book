@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@media (max-width: 768px) {
+    .recipe-card {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Reduce margins for better spacing */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ece8e8;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Change the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    /* background-position: center; Centers the background image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */
+  
+    
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent overlay */
+    backdrop-filter: blur(10px); /* Blurring the background image */
+}
+
+header {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #e6dad6 ;
+    margin-top: -3vh;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+#search {
+    padding: 18px;
+    width: 80%;
+    margin-top: -10px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items to the left and right */
+    gap: 0px; /* Space between recipe cards */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.recipe-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(30% - 30px); 
+    /* height: calc(18%); */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover img {
+    transform: scale(1.05);
+}
+
+.recipe-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.recipe-card:hover h2 {
+    color: #ff6f61;
+}
+
+.recipe-card p {
+    color: #777;
+}
+.desert{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #e6dad6 ;
+    margin-top: -3vh;
+    color: rgb(16, 15, 15);
+    padding: 20px;
+    text-align: center;
+}
+#desert-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns items to the left and right */
+    gap: 0px; /* Space between recipe cards */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.desert-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(30% - 30px); 
+    /* height: calc(18%); */
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.desert-card:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.desert-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.desert-card:hover img {
+    transform: scale(1.05);
+}
+
+.desert-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.desert-card:hover h2 {
+    color: #ff6f61;
+}
+
+.desert-card p {
+    color: #777;
+}
+#sortOrder{
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgba(1, 1, 1, 0.9);
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
